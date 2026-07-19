@@ -1,9 +1,9 @@
 [package]
 name = "phonenumber-rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.75"
-description = "A Rust rewrite of Google's libphonenumber: parse, validate, and format international phone numbers, with full calling-code/region metadata, geocoding, and JSON analysis."
+description = "Rust rewrite of Google's libphonenumber, plus one-call JSON analysis (analyze -> PhoneNumberInfo) and region/city geocoding extended to 40 countries libphonenumber omits. Parse, validate, format, type, calling regions, short numbers, AsYouType, carrier & time zone."
 license = "Apache-2.0"
 repository = "https://github.com/jqueguiner/phonenumber-rs"
 readme = "README.md"

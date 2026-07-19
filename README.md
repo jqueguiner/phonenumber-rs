@@ -5,6 +5,16 @@ A ground-up Rust rewrite of Google's
 format international phone numbers, backed by the full country calling-code ↔
 region ("calling regions") metadata.
 
+**More than a port.** On top of parity it adds:
+
+- **One-call JSON analysis** — `analyze()` returns a `PhoneNumberInfo` (country
+  code, English country name, every calling region, validity, type, geocoding,
+  carrier, time zones) that serializes straight to JSON.
+- **Region + city geocoding** — a location for the number, extended to **40
+  countries libphonenumber omits** (France, Mexico, Chile, Lebanon, Tunisia,
+  Uzbekistan, …), with a country-name fallback so it is never empty.
+- **CLDR country names** for every region.
+
 Metadata is **generated at build time** from the upstream XML
 (`resources/PhoneNumberMetadata.xml`, `resources/ShortNumberMetadata.xml`) into a
 compact `bincode` blob embedded in the binary — no hand-written country tables,
