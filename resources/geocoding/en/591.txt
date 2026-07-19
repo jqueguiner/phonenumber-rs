@@ -1,0 +1,4 @@
+# CUSTOM geocoding for Bolivia (+591); source: Wikipedia "Telephone numbers in Bolivia" (https://en.wikipedia.org/wiki/Telephone_numbers_in_Bolivia) and ITU numbering plan communication of 26.IX.2001. Approximate (number portability). Bolivia uses single-digit geographic numbering zones (2/3/4); each zone covers three departments, so places are grouped by zone.
+5912|La Paz, Oruro and Potosí
+5913|Santa Cruz, Beni and Pando
+5914|Cochabamba, Chuquisaca and Tarija

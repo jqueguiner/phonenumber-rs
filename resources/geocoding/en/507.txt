@@ -1,0 +1,6 @@
+# CUSTOM geocoding for Panama (+507); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Panama (flat plan; first landline digit loosely indicates region). Approximate (number portability).
+5072|Panama City
+5073|Panama City
+5074|Colon Province
+5077|Chiriqui and Bocas del Toro Provinces
+5079|Cocle, Herrera, Los Santos and Veraguas Provinces

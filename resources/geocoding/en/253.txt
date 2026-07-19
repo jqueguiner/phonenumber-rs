@@ -1,0 +1,13 @@
+# CUSTOM geocoding for Djibouti (+253); source: ITU-T National Numbering Plan for Djibouti, Operational Bulletin, communication of 3.I.2012 (https://www.itu.int/dms_pub/itu-t/oth/02/02/T020200003A0001PDFE.pdf), cross-checked with https://en.wikipedia.org/wiki/Telephone_numbers_in_Djibouti. Approximate (number portability).
+25321|Djibouti City
+2532742|Djibouti Districts
+25327420|Dikhil
+25327422|Arta
+25327424|Tadjourah
+25327426|Ali Sabieh
+25327428|Obock
+25327500|Arta
+25327501|Tadjourah
+25327502|Dikhil
+25327503|Ali Sabieh
+25327504|Obock

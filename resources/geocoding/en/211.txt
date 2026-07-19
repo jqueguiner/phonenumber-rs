@@ -1,0 +1,2 @@
+# CUSTOM geocoding for South Sudan (+211); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_South_Sudan and ITU Operational Bulletin (National Numbering Plan for +211). Approximate (number portability). South Sudan uses a service-type/operator numbering plan (leading digit 1=fixed, 9=mobile; two-digit prefix identifies the operator, NOT a geographic area) with a flat 7-digit subscriber number, so there are NO geographic area codes to map.
+211|South Sudan

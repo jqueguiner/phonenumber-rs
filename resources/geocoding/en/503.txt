@@ -1,0 +1,6 @@
+# CUSTOM geocoding for El Salvador (+503); source: Wikipedia "Telephone numbers in El Salvador" (ITU National Numbering Plan, in effect 2005). Approximate (number portability). El Salvador uses a closed 8-digit plan; fixed lines begin with 2 and the second digit encodes the geographic region.
+50322|San Salvador Metropolitan Area
+50323|Central Region
+50324|Western Region
+50325|San Salvador Metropolitan Area
+50326|Eastern Region

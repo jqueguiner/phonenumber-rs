@@ -1,0 +1,19 @@
+# CUSTOM geocoding for Iraq (+964); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Iraq. Approximate (number portability).
+9641|Baghdad
+96421|Tikrit
+96423|Kut
+96424|Ramadi
+96425|Baquba
+96430|Hillah
+96432|Karbala
+96433|Najaf
+96436|Diwaniya
+96437|Samawa
+96440|Basra
+96442|Nasiriyah
+96443|Amarah
+96450|Kirkuk
+96453|Sulaymaniyah
+96460|Mosul
+96462|Dohuk
+96466|Erbil

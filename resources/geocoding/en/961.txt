@@ -1,0 +1,15 @@
+# geocoding for +961: upstream libphonenumber + 7 custom additions.
+9611|Beirut
+96121|Beirut
+96124|Metn
+96125|Chouf
+96126|North Lebanon
+96127|South Lebanon
+96128|Bekaa
+96129|Jbeil & Keserwan
+9614|Metn
+9615|Baabda, Aley & Chouf
+9616|North Lebanon & Akkar
+9617|South Lebanon
+9618|Bekaa & Baalbek-Hermel
+9619|Keserwan & Byblos

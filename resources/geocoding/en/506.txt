@@ -1,0 +1,3 @@
+# CUSTOM geocoding for Costa Rica (+506); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Costa_Rica. Approximate (number portability).
+# Costa Rica uses a closed 8-digit numbering plan with NO geographic area codes; the leading digit indicates service type (2 = fixed-line, 6/7/8 = mobile), not region.
+506|Costa Rica

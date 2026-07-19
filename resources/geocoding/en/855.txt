@@ -1,0 +1,26 @@
+# CUSTOM geocoding for Cambodia (+855); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Cambodia. Approximate (number portability).
+85523|Phnom Penh
+85524|Kandal
+85525|Kampong Speu
+85526|Kampong Chhnang
+85532|Takeo
+85533|Kampot
+85534|Sihanoukville
+85535|Koh Kong
+85536|Kep
+85542|Kampong Cham
+85543|Prey Veng
+85544|Svay Rieng
+85545|Tbong Khmum
+85552|Pursat
+85553|Battambang
+85554|Banteay Meanchey
+85555|Pailin
+85562|Kampong Thom
+85563|Siem Reap
+85564|Preah Vihear
+85565|Oddar Meanchey
+85572|Kratie
+85573|Mondulkiri
+85574|Stung Treng
+85575|Ratanakiri

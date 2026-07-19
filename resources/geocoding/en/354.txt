@@ -1,0 +1,66 @@
+# geocoding for +354: upstream libphonenumber + 60 custom additions.
+35442|Keflavík
+354421|Keflavik
+354422|Reykjanes
+354423|Reykjanes
+354424|Reykjanes
+354425|Reykjanes
+354426|Reykjanes
+354427|Reykjanes
+354428|Reykjanes
+354429|Reykjanes
+354430|Vesturland
+354431|Vesturland
+354432|Vesturland
+354433|Vesturland
+354434|Vesturland
+354435|Vesturland
+354436|Vesturland
+354437|Vesturland
+354438|Vesturland
+354439|Vesturland
+354450|Vestfirdir
+354451|Vestfirdir
+354452|Vestfirdir
+354453|Vestfirdir
+354454|Vestfirdir
+354455|Vestfirdir
+354456|Vestfirdir
+354457|Northwestern Region
+354458|Northwestern Region
+354459|Northwestern Region
+35446|Akureyri
+354460|Northeastern Region
+354461|Northeastern Region
+354462|Akureyri
+354463|Northeastern Region
+354464|Northeastern Region
+354465|Northeastern Region
+354466|Northeastern Region
+354467|Northeastern Region
+354468|Northeastern Region
+354469|Northeastern Region
+354470|Eastern Region
+354471|Eastern Region
+354472|Eastern Region
+354473|Eastern Region
+354474|Eastern Region
+354475|Eastern Region
+354476|Eastern Region
+354477|Eastern Region
+354478|Eastern Region
+354479|Eastern Region
+354480|Southern Region
+354481|Southern Region
+354482|Southern Region
+354483|Southern Region
+354486|Southern Region
+354487|Southern Region
+354488|Southern Region
+3545|Reykjavík
+35455|Reykjavík/Vesturbær/Miðbærinn
+354551|Reykjavik
+354552|Reykjavik
+35456|Reykjavík/Vesturbær/Miðbærinn
+354561|Reykjavik
+354562|Reykjavik

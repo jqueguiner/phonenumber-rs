@@ -1,0 +1,27 @@
+# CUSTOM geocoding for Latvia (+371); source: en.wikipedia.org/wiki/Telephone_numbers_in_Latvia and rebtel.com/en/international-calling-guide/phone-codes/latvia. Approximate (number portability). Since 2008 landlines are 8-digit closed-plan numbers beginning with 6; the digits after the leading 6 retain geographic significance.
+371630|Jelgava
+371631|Tukums
+371632|Talsi
+371633|Kuldiga
+371634|Liepaja
+371636|Ventspils
+371637|Dobele
+371638|Saldus
+371639|Bauska
+371640|Limbazi
+371641|Cesis
+371642|Valmiera
+371643|Aluksne
+371644|Gulbene
+371645|Balvi
+371646|Rezekne
+371647|Valka
+371648|Madona
+371650|Ogre
+371651|Aizkraukle
+371652|Jekabpils
+371653|Preili
+371654|Daugavpils
+371656|Kraslava
+371657|Ludza
+37167|Riga

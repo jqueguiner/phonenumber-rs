@@ -1,0 +1,5 @@
+# CUSTOM geocoding for Rwanda (+250); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Rwanda (also ITU E.164 national numbering plan, RURA). Approximate (number portability).
+# Rwanda uses a CLOSED, non-geographic numbering plan: all national significant numbers are 9 digits.
+# Fixed-line numbers are distinguished by OPERATOR prefixes (25 Liquid Telecom, 22 Airtel, 28 MTN), NOT by city/region area codes.
+# Cities such as Kigali, Butare (Huye), Gisenyi (Rubavu) and Ruhengeri (Musanze) all share the same fixed-line prefix, so no geographic area-code -> place mapping exists.
+250|Rwanda

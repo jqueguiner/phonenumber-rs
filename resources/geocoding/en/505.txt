@@ -1,0 +1,2 @@
+# CUSTOM geocoding for Nicaragua (+505); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Nicaragua (also ITU numbering plan, TELCOR). Approximate (number portability).
+505|Nicaragua

@@ -1,0 +1,108 @@
+# CUSTOM (not from upstream libphonenumber, which omits France geocoding).
+# Keyed by country code + leading national digits (longest prefix wins).
+# Level: 2-digit = ARCEP zone (fallback); 4-digit = department / main city.
+# Approximate: number portability means these are not guaranteed per subscriber.
+
+# --- Zones (fallback) ---
+331|Île-de-France
+332|Northwest France
+333|Northeast France
+334|Southeast France
+335|Southwest France
+
+# --- Zone 1: Île-de-France / Paris ---
+3310|Paris area
+3311|Paris area
+3312|Paris area
+3313|Paris area
+33140|Paris
+33142|Paris
+33143|Paris
+33144|Paris
+33145|Paris
+33146|Hauts-de-Seine
+33147|Hauts-de-Seine
+33148|Seine-Saint-Denis
+33149|Seine-Saint-Denis
+33153|Paris
+33155|Paris
+33156|Paris
+33157|Paris
+33158|Paris
+33160|Seine-et-Marne
+33164|Seine-et-Marne
+33169|Essonne
+33130|Yvelines
+33134|Val-d'Oise
+33139|Yvelines
+
+# --- Zone 2: Northwest (Normandy, Brittany, Loire) ---
+33232|Eure
+33235|Seine-Maritime (Rouen)
+33231|Calvados (Caen)
+33233|Manche
+33223|Rennes (Ille-et-Vilaine)
+33299|Rennes (Ille-et-Vilaine)
+33298|Finistère (Brest)
+33297|Morbihan (Vannes)
+33296|Côtes-d'Armor (Saint-Brieuc)
+33240|Nantes (Loire-Atlantique)
+33251|Vendée / Nantes
+33243|Sarthe (Le Mans)
+33241|Maine-et-Loire (Angers)
+33247|Indre-et-Loire (Tours)
+33238|Loiret (Orléans)
+
+# --- Zone 3: Northeast ---
+33320|Lille (Nord)
+33328|Nord
+33327|Nord
+33322|Somme (Amiens)
+33323|Aisne
+33325|Aube (Troyes)
+33326|Marne (Reims)
+33329|Meuse / Vosges
+33383|Nancy (Meurthe-et-Moselle)
+33387|Moselle (Metz)
+33388|Strasbourg (Bas-Rhin)
+33389|Haut-Rhin (Mulhouse)
+33380|Dijon (Côte-d'Or)
+33381|Doubs (Besançon)
+33385|Saône-et-Loire
+
+# --- Zone 4: Southeast ---
+33491|Marseille (Bouches-du-Rhône)
+33496|Marseille
+33413|Marseille area
+33442|Aix-en-Provence
+33490|Vaucluse (Avignon)
+33492|Alpes / Hautes-Alpes
+33493|Nice (Alpes-Maritimes)
+33494|Var (Toulon)
+33472|Lyon (Rhône)
+33478|Lyon
+33426|Lyon
+33427|Lyon
+33474|Ain / Rhône
+33476|Grenoble (Isère)
+33479|Savoie
+33477|Saint-Étienne (Loire)
+33450|Haute-Savoie
+
+# --- Zone 5: Southwest ---
+33556|Bordeaux (Gironde)
+33557|Gironde
+33559|Pyrénées-Atlantiques (Pau/Bayonne)
+33561|Toulouse (Haute-Garonne)
+33562|Toulouse area
+33567|Toulouse
+33565|Lot / Aveyron
+33553|Lot-et-Garonne / Dordogne
+33555|Limousin (Limoges)
+33546|Charente-Maritime (La Rochelle)
+33549|Poitiers (Vienne)
+33545|Charente (Angoulême)
+33466|Gard (Nîmes)
+33467|Montpellier (Hérault)
+33468|Pyrénées-Orientales (Perpignan)
+33463|Tarn / Ariège
