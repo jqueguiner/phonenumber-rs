@@ -1,0 +1,15 @@
+# CUSTOM geocoding for Uzbekistan (+998); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Uzbekistan. Approximate (number portability).
+99861|Karakalpakstan (Nukus)
+99862|Khorezm (Urgench)
+99865|Bukhara
+99866|Samarkand
+99867|Syrdarya (Gulistan)
+99869|Namangan
+99870|Tashkent Region
+99871|Tashkent
+99872|Jizzakh
+99873|Fergana
+99874|Andijan
+99875|Kashkadarya (Qarshi)
+99876|Surkhandarya (Termez)
+99879|Navoi

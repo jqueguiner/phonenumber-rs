@@ -1,0 +1,56 @@
+# CUSTOM geocoding for Nepal (+977); source: Wikipedia "Telephone numbers in Nepal" (https://en.wikipedia.org/wiki/Telephone_numbers_in_Nepal) and Prokerala Nepal STD area-code list (https://www.prokerala.com/how-to/call/nepal/area-codes/). Approximate (number portability). One geographic fixed-line area code per district, keyed to the district headquarters / major city.
+9771|Kathmandu Valley (Kathmandu/Lalitpur/Bhaktapur)
+97710|Dhading
+97711|Kavrepalanchok (Banepa)
+97721|Morang (Biratnagar)
+97723|Jhapa (Bhadrapur)
+97724|Panchthar (Phidim)
+97725|Sunsari (Dharan)
+97726|Dhankuta
+97727|Ilam
+97729|Sankhuwasabha (Khandbari)
+97731|Saptari (Rajbiraj)
+97733|Siraha
+97735|Udayapur (Gaighat)
+97736|Khotang
+97737|Okhaldhunga
+97738|Solukhumbu
+97741|Dhanusha (Janakpur)
+97744|Mahottari (Jaleshwar)
+97746|Sarlahi (Malangwa)
+97747|Sindhuli
+97748|Ramechhap
+97749|Dolakha (Charikot)
+97751|Parsa (Birgunj)
+97753|Bara (Kalaiya)
+97755|Rautahat (Gaur)
+97756|Chitwan (Bharatpur)
+97757|Makwanpur (Hetauda)
+97761|Kaski (Pokhara)
+97763|Syangja
+97764|Gorkha
+97765|Tanahun (Damauli)
+97766|Lamjung (Besisahar)
+97767|Parbat (Kusma)
+97768|Baglung
+97769|Myagdi (Beni)
+97771|Rupandehi (Butwal/Bhairahawa)
+97775|Palpa (Tansen)
+97776|Kapilvastu (Taulihawa)
+97777|Arghakhanchi (Sandhikharka)
+97778|Nawalparasi (Parasi)
+97779|Gulmi (Tamghas)
+97781|Banke (Nepalgunj)
+97782|Dang (Ghorahi/Tulsipur)
+97783|Surkhet (Birendranagar)
+97784|Bardiya (Gulariya)
+97786|Pyuthan
+97787|Jumla
+97789|Dailekh
+97791|Kailali (Dhangadhi)
+97792|Kanchanpur (Mahendranagar)
+97793|Darchula
+97794|Doti (Dipayal)
+97795|Baitadi
+97796|Dadeldhura
+97797|Achham

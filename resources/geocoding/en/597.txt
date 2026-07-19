@@ -1,0 +1,19 @@
+# CUSTOM geocoding for Suriname (+597); source: ITU national numbering plan (itu.int/itudoc/itu-t/number/s/sur/70766_ww9.doc) and Wikipedia "Telephone numbers in Suriname". Approximate (number portability). Suriname has no dialable area codes; leading digits of the 6-digit subscriber number indicate region.
+59721|West Suriname
+59722|West Suriname
+59723|West Suriname
+59730|Mid and East Suriname
+59731|Mid and East Suriname
+59732|Mid and East Suriname
+59733|Mid and East Suriname
+59734|Mid and East Suriname
+59735|Mid and East Suriname
+59736|Mid and East Suriname
+59737|Mid and East Suriname
+5974|Paramaribo
+59752|Paramaribo
+59753|Paramaribo
+59754|Paramaribo
+59755|Paramaribo
+59756|Paramaribo
+59758|Paramaribo

@@ -1,0 +1,11 @@
+# CUSTOM geocoding for Malawi (+265); source: ITU-T National Numbering Plan for +265 (MACRA, Communication of 15.XII.2008) https://www.itu.int/dms_pub/itu-t/oth/02/02/T02020000800002PDFE.pdf cross-checked against Wikipedia "Telephone numbers in Malawi" and public MACRA/operator directory listings. Geographic fixed lines use national prefix 1 followed by a region digit. Approximate (number portability).
+26512|Malawi Northern Region
+26513|Mzuzu
+265135|Nkhata Bay
+265136|Karonga
+265137|Rumphi
+26515|Zomba
+26516|Blantyre
+26517|Lilongwe
+26518|Blantyre
+26519|Malawi Southern Region

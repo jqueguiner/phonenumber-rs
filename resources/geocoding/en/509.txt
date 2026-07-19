@@ -1,0 +1,2 @@
+# CUSTOM geocoding for Haiti (+509); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Haiti and ITU national numbering plan (CONATEL, https://www.itu.int/dms_pub/itu-t/oth/02/02/T020200005E0002PDFE.pdf). Approximate (number portability). Haiti uses a CLOSED, non-geographic numbering plan: prefixes denote operator/service (2x fixed, 3x/4x mobile), NOT geography, so only a single country-level mapping is provided.
+509|Haiti

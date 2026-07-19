@@ -1,0 +1,2 @@
+# CUSTOM geocoding for Liberia (+231); source: Wikipedia "Telephone numbers in Liberia" (https://en.wikipedia.org/wiki/Telephone_numbers_in_Liberia) and ITU numbering plan. Liberia uses a closed, operator-based numbering plan with NO geographic (city/region) area codes; prefixes identify operators (e.g. LIBTELCO fixed 2X, mobile 5/7/8), not places. Approximate (number portability).
+231|Liberia

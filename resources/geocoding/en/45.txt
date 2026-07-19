@@ -1,0 +1,3 @@
+# CUSTOM geocoding for Denmark (+45); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Denmark. Approximate (number portability).
+# Denmark uses a CLOSED, non-geographic 8-digit numbering plan with NO geographic area codes (geographic codes were abolished in 1989); leading digits denote service type, not location.
+45|Denmark

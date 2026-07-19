@@ -1,0 +1,18 @@
+# CUSTOM geocoding for Laos (+856); source: Wikipedia "Telephone numbers in Laos" (https://en.wikipedia.org/wiki/Telephone_numbers_in_Laos). Approximate (number portability).
+85621|Vientiane
+85623|Vientiane Province
+85631|Champasak
+85634|Salavan
+85636|Attapeu
+85638|Sekong
+85641|Savannakhet
+85651|Khammouan
+85654|Bolikhamsai
+85661|Xiengkhouang
+85664|Houaphanh
+85671|Luang Prabang
+85674|Sainyabuli
+85681|Oudomxay
+85684|Bokeo
+85686|Luang Namtha
+85688|Phongsali

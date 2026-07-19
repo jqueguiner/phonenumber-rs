@@ -1,0 +1,4 @@
+# CUSTOM geocoding for Guatemala (+502); source: Wikipedia "Telephone numbers in Guatemala" and Superintendencia de Telecomunicaciones (SIT) / ITU National Numbering Plan. Approximate (number portability).
+5022|Guatemala City
+5026|Guatemala Department (suburban)
+5027|Rest of Guatemala

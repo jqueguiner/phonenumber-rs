@@ -1,0 +1,46 @@
+# CUSTOM geocoding for Chad (+235); source: Wikipedia "Telephone numbers in Chad" (https://en.wikipedia.org/wiki/Telephone_numbers_in_Chad). Approximate (number portability).
+# Chad uses a closed 8-digit NSN with no trunk prefix. Fixed lines use the prefix 22; geographic regions are distinguished by the digits following 22.
+# Keys follow 235 + national digits. Where a two-digit block spans two regions in the source, finer keys are used; the dominant region is assigned otherwise.
+23522500|Batha
+23522501|Batha
+23522502|Batha
+23522503|Borkou-Ennedi-Tibesti
+23522504|Kanem
+23522505|Kanem
+23522506|Lac
+23522507|Lac
+23522508|Guera
+23522509|Guera
+2352251|N'Djamena
+2352252|N'Djamena
+2352253|N'Djamena
+23522540|Dababa
+23522541|Dababa
+23522542|Dababa
+23522543|Dababa
+23522544|Dababa
+23522545|Dababa
+23522546|Hadjer-Lamis
+23522547|Hadjer-Lamis
+23522548|Hadjer-Lamis
+23522549|Hadjer-Lamis
+23522680|Moyen-Chari
+23522681|Moyen-Chari
+23522682|Moyen-Chari
+23522683|Moyen-Chari
+23522684|Moyen-Chari
+23522685|Salamat
+23522686|Ouaddai
+23522687|Ouaddai
+23522688|Ouaddai
+23522689|Biltine
+23522690|Logone Occidental
+23522691|Logone Occidental
+23522692|Logone Occidental
+23522693|Logone Occidental
+23522694|Logone Oriental
+23522695|Logone Oriental
+23522696|Mayo-Kebbi
+23522697|Mayo-Kebbi
+23522698|Mayo-Kebbi
+23522699|Tandjile

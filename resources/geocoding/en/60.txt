@@ -1,0 +1,15 @@
+# CUSTOM geocoding for Malaysia (+60); source: https://en.wikipedia.org/wiki/Telephone_numbers_in_Malaysia (MCMC national numbering plan). Approximate (number portability).
+603|Kuala Lumpur
+604|Penang
+605|Ipoh
+606|Malacca
+607|Johor Bahru
+609|Kuantan
+6082|Kuching
+6083|Sri Aman
+6084|Sibu
+6085|Miri
+6086|Bintulu
+6087|Labuan
+6088|Kota Kinabalu
+6089|Sandakan

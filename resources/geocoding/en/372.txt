@@ -1,0 +1,30 @@
+# CUSTOM geocoding for Estonia (+372); source: en.wikipedia.org/wiki/Telephone_numbers_in_Estonia and prokerala.com/how-to/call/estonia/area-codes. Approximate (number portability).
+37232|Lääne-Viru County (Rakvere)
+37233|Ida-Viru County (Kohtla-Järve)
+37235|Narva
+37238|Järva County (Paide)
+37239|Hiiu County
+37243|Viljandi
+37244|Pärnu
+37245|Saare County (Kuressaare)
+37246|Hiiu County (Kärdla)
+37247|Lääne County (Haapsalu)
+37248|Rapla County
+37260|Tallinn
+37261|Tallinn
+37262|Tallinn
+37263|Tallinn
+37264|Tallinn
+37265|Tallinn
+37266|Tallinn
+37267|Tallinn
+37268|Tallinn
+37269|Tallinn
+37271|Tallinn
+37273|Tartu
+37274|Tartu
+37275|Tartu
+37276|Valga
+37277|Jõgeva County
+37278|Võru
+37279|Põlva County

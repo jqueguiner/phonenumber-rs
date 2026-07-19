@@ -1,0 +1,15 @@
+# CUSTOM geocoding for Eritrea (+291); source: ITU-T National Numbering Plan for Eritrea (Communication of 11.V.1999, https://www.itu.int/dms_pub/itu-t/oth/02/02/T02020000420001MSWE.doc) cross-checked with libphonenumber PhoneNumberMetadata (territory ER) and https://en.wikipedia.org/wiki/Telephone_numbers_in_Eritrea. Approximate (number portability); EriTel is the sole operator and per-town assignments are only partially published.
+291111|Asmara
+291112|Asmara
+291115|Asmara
+291116|Asmara
+291118|Asmara
+291120|Eritrea
+291140|Eritrea
+291155|Eritrea
+291161|Eritrea
+291164|Eritrea
+291166|Eritrea
+291171|Agordat
+291172|Tessenei
+291173|Barentu
