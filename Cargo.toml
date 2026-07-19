@@ -1,13 +1,18 @@
 [package]
-name = "phonenumber"
+name = "phonenumber-rs"
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.75"
-description = "A Rust rewrite of Google's libphonenumber: parse, validate, and format international phone numbers, with full calling-code/region metadata."
+description = "A Rust rewrite of Google's libphonenumber: parse, validate, and format international phone numbers, with full calling-code/region metadata, geocoding, and JSON analysis."
 license = "Apache-2.0"
-repository = "https://example.invalid/phonenumber"
+repository = "https://github.com/jqueguiner/phonenumber-rs"
+readme = "README.md"
 keywords = ["phone", "phonenumber", "libphonenumber", "e164", "telephone"]
 categories = ["parsing", "internationalization"]
+exclude = ["upstream/", "/.github", "*.bk"]
+
+[lib]
+name = "phonenumber"
 
 [dependencies]
 regex = "1"
