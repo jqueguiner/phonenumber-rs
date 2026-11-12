@@ -135,6 +135,34 @@ fn regex_cache() -> &'static Mutex<HashMap<String, &'static Regex>> {
     CACHE.get_or_init(|| Mutex::new(HashMap::new()))
 }
 
+/// Rewrite a metadata pattern so that `\d` and `\D` mean what they mean in Go's RE2, which
+/// compiles every metadata pattern in Go's `regexFor` (phonenumberutil.go:494): `\d` is
+/// `[0-9]` there, while the `regex` crate's Unicode `\d` is every Nd digit. A national number
+/// can hold a non-ASCII digit (Go's `normalizeDigits` keeps Devanagari, Bengali, ... digits), so
+/// the two readings differ. `[0-9]` / `[^0-9]` is valid inside a class as well (the `regex`
+/// crate takes a nested class as a union), so the rewrite needs no class tracking. Escaped
+/// backslashes (`\\d`) are left alone.
+pub(crate) fn go_ascii_digit_classes(pattern: &str) -> String {
+    let mut out = String::with_capacity(pattern.len() + 8);
+    let mut chars = pattern.chars();
+    while let Some(c) = chars.next() {
+        if c != '\\' {
+            out.push(c);
+            continue;
+        }
+        match chars.next() {
+            Some('d') => out.push_str("[0-9]"),
+            Some('D') => out.push_str("[^0-9]"),
+            Some(next) => {
+                out.push('\\');
+                out.push(next);
+            }
+            None => out.push('\\'),
+        }
+    }
+    out
+}
+
 /// Compile (and memoize) a national-number pattern, anchored to a full match.
 ///
 /// libphonenumber semantics: a `nationalNumberPattern` must match the whole
@@ -152,7 +180,7 @@ pub fn anchored_regex(pattern: &str) -> Option<&'static Regex> {
     if let Some(r) = cache.get(&key) {
         return Some(*r);
     }
-    let anchored = format!("^(?:{pattern})$");
+    let anchored = format!("^(?:{})$", go_ascii_digit_classes(pattern));
     match Regex::new(&anchored) {
         Ok(re) => {
             let leaked: &'static Regex = Box::leak(Box::new(re));
@@ -173,7 +201,7 @@ pub fn prefix_regex(pattern: &str) -> Option<&'static Regex> {
     if let Some(r) = cache.get(&key) {
         return Some(*r);
     }
-    match Regex::new(&format!("^(?:{pattern})")) {
+    match Regex::new(&format!("^(?:{})", go_ascii_digit_classes(pattern))) {
         Ok(re) => {
             let leaked: &'static Regex = Box::leak(Box::new(re));
             cache.insert(key, leaked);
@@ -225,5 +253,17 @@ mod tests {
         assert!(p.is_match("12345"));
         // Invalid regex -> None, not a panic.
         assert!(anchored_regex(r"(?P<").is_none());
+    }
+
+    #[test]
+    fn metadata_digits_are_ascii_as_in_go() {
+        assert_eq!(go_ascii_digit_classes(r"[1-9]\d{2}"), "[1-9][0-9]{2}");
+        assert_eq!(go_ascii_digit_classes(r"[\d]\D"), "[[0-9]][^0-9]");
+        assert_eq!(go_ascii_digit_classes(r"\\d\("), r"\\d\(");
+        // Go's RE2 reads `\d` as ASCII: a Devanagari digit is not one.
+        let re = anchored_regex(r"\d{2}").unwrap();
+        assert!(re.is_match("12"));
+        assert!(!re.is_match("1\u{0967}"));
+        assert!(anchored_regex(r"[\d]{2}").unwrap().is_match("12"));
     }
 }

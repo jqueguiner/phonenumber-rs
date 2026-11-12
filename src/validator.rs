@@ -24,10 +24,22 @@ fn matches_desc(nsn: &str, desc: &PhoneNumberDesc) -> bool {
     }
 }
 
+/// Go's `isNumberMatchingDesc` (phonenumberutil.go:1908) for the general description. The XML
+/// gives the general description no possible lengths; libphonenumber's metadata build (the
+/// metadata Go loads) sets them to the union of every number type's national lengths, so the
+/// length test runs on that union, as in Go.
+fn matches_general_desc(nsn: &str, meta: &PhoneMetadata) -> bool {
+    let (national, _) = general_possible_lengths(meta);
+    if !national.is_empty() && !national.contains(&(nsn.len() as u8)) {
+        return false;
+    }
+    matches_desc(nsn, &meta.general_desc)
+}
+
 /// Classify a national significant number against a territory's descriptions.
-/// Order mirrors libphonenumber's `getNumberTypeHelper`.
+/// Go's `getNumberTypeHelper` (phonenumberutil.go:1817).
 pub(crate) fn number_type_helper(nsn: &str, meta: &PhoneMetadata) -> PhoneNumberType {
-    if !matches_desc(nsn, &meta.general_desc) {
+    if !matches_general_desc(nsn, meta) {
         return PhoneNumberType::Unknown;
     }
     if matches_desc(nsn, &meta.premium_rate) {
@@ -156,7 +168,37 @@ fn general_possible_lengths(meta: &PhoneMetadata) -> (Vec<u8>, Vec<u8>) {
     nat.dedup();
     local.sort_unstable();
     local.dedup();
+    // libphonenumber's metadata build (`setPossibleLengths`) drops a local-only length that is a
+    // national length of another type: 7 is local-only for a US fixed line but national for
+    // nothing, while in GB 7 is local-only for one type and national for another.
+    local.retain(|l| !nat.contains(l));
     (nat, local)
+}
+
+/// Go's `testNumberLength` (phonenumberutil.go:2119) for the type `UNKNOWN`, the only type the
+/// parser asks about: the general description's lengths, local-only lengths first.
+pub(crate) fn test_number_length_general(number: &str, meta: &PhoneMetadata) -> PossibleResult {
+    let (possible, local) = general_possible_lengths(meta);
+    // Go's metadata marks "no numbers of this type" with the length -1; here that is no lengths.
+    let (Some(&minimum), Some(&maximum)) = (possible.first(), possible.last()) else {
+        return PossibleResult::InvalidLength;
+    };
+    // Go compares the byte length of the string (`int32(len(number))`).
+    let actual = number.len();
+    if local.iter().any(|&l| usize::from(l) == actual) {
+        return PossibleResult::IsPossibleLocalOnly;
+    }
+    if usize::from(minimum) == actual {
+        PossibleResult::IsPossible
+    } else if usize::from(minimum) > actual {
+        PossibleResult::TooShort
+    } else if usize::from(maximum) < actual {
+        PossibleResult::TooLong
+    } else if possible.iter().any(|&l| usize::from(l) == actual) {
+        PossibleResult::IsPossible
+    } else {
+        PossibleResult::InvalidLength
+    }
 }
 
 /// Length-based possibility check — cheaper than full validation, mirroring

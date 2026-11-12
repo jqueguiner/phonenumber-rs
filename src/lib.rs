@@ -18,6 +18,7 @@
 mod model;
 
 pub mod ayt;
+pub mod digits;
 pub mod error;
 pub mod example;
 pub mod format;
@@ -25,6 +26,7 @@ pub mod info;
 pub mod mapper;
 pub mod metadata;
 pub mod number;
+mod parse_patterns;
 pub mod parser;
 pub mod short;
 pub mod validator;
