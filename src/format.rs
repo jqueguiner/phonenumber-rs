@@ -24,9 +24,10 @@ pub fn format(number: &PhoneNumber, fmt: PhoneNumberFormat) -> String {
     let code = number.country_code;
 
     if fmt == PhoneNumberFormat::E164 {
+        // As upstream's format(): an early exit for E164, even for an unknown calling code;
+        // "Extensions are not formatted."
         let mut out = String::new();
         prefix_country_code(&mut out, code, fmt, &nsn);
-        append_extension(&mut out, number, fmt);
         return out;
     }
 
@@ -330,7 +331,8 @@ mod tests {
         n.extension = Some("42".to_string());
         assert!(format(&n, PhoneNumberFormat::National).ends_with(" ext. 42"));
         assert!(format(&n, PhoneNumberFormat::Rfc3966).ends_with(";ext=42"));
-        assert!(format(&n, PhoneNumberFormat::E164).ends_with(" ext. 42"));
+        // E164 never carries the extension (upstream: "Extensions are not formatted").
+        assert_eq!(format(&n, PhoneNumberFormat::E164), "+16502530000");
         // Empty extension is ignored.
         n.extension = Some(String::new());
         assert_eq!(format(&n, PhoneNumberFormat::E164), "+16502530000");
